@@ -15,10 +15,10 @@ class FoodModel(BaseModel):
         return (
             "Food("
             f"id='{self.id!s}', "
-            f"name='{self.name!r}', "
-            f"price='{self.price!r}', "
-            f"quantity='{self.quantity!r}', "
-            f"description='{self.description!r}', "
-            f"weight='{self.weight!r}'"
+            f"name={self.name!r}, "
+            f"price={self.price!r}, "
+            f"quantity={self.quantity!r}, "
+            f"description={self.description!r}, "
+            f"weight={self.weight!r}"
             ")"
         )

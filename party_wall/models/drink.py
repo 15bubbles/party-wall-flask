@@ -15,10 +15,10 @@ class DrinkModel(BaseModel):
         return (
             "Drink("
             f"id='{self.id!s}', "
-            f"name='{self.name!r}', "
-            f"price='{self.price!r}', "
-            f"quantity='{self.quantity!r}', "
-            f"description='{self.description!r}', "
-            f"volume='{self.volume!r}'"
+            f"name={self.name!r}, "
+            f"price={self.price!r}, "
+            f"quantity={self.quantity!r}, "
+            f"description={self.description!r}, "
+            f"volume={self.volume!r}"
             ")"
         )

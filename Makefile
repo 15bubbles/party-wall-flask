@@ -1,3 +1,5 @@
+FLASK_APP=party_wall/app.py
+
 install:
 	pip install poetry
 	poetry install

@@ -7,3 +7,9 @@ from party_wall.models.drink import DrinkModel
 class DrinkSchema(ma.Schema):
     class Meta:
         model = DrinkModel
+
+
+class DrinkCreateSchema(ma.Schema):
+    class Meta:
+        model = DrinkModel
+        exclude = ("id",)
