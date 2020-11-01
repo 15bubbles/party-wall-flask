@@ -9,4 +9,4 @@ RUN poetry export --format requirements.txt --output requirements.txt \
 
 EXPOSE 5000
 
-CMD ["flask", "run"]
+CMD ["gunicorn", "-c gunicorn.conf.py", "party_wall.app:app"]

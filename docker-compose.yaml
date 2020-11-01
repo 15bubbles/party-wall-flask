@@ -16,7 +16,7 @@ services:
       - db
     depends_on:
       - db
-    command: "flask run"
+    command: "gunicorn -c gunicorn.conf.py party_wall.app:app"
   db:
     image: postgres:13
     ports:
