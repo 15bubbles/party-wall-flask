@@ -1,8 +1,9 @@
 from uuid import uuid4
 
-from party_wall.db import db
 from sqlalchemy import Column
 from sqlalchemy.dialects.postgresql import UUID
+
+from party_wall.db import db
 
 
 class BaseModel(db.Model):

@@ -1,10 +1,9 @@
-import os
 import multiprocessing
-
+import os
 
 HOST = os.getenv("HOST", "127.0.0.1")
 PORT = os.getenv("PORT", "5000")
-ENV = os.getenv("ENV")
+ENVIRONMENT = os.getenv("ENVIRONMENT")
 
 bind = f"{HOST}:{PORT}"
 workers = multiprocessing.cpu_count() * 2 + 1
@@ -22,7 +21,6 @@ loglevel = "info"
 # access_log_format = ""
 
 
-if ENV in ["development", "dev"]:
-    workers = 4
-
+if ENVIRONMENT in ["development", "dev"]:
+    workers = 1
     reload = True

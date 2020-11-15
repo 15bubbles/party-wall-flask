@@ -1,5 +1,6 @@
+from sqlalchemy import Column, Float, Integer, String, Text
+
 from party_wall.models.base import BaseModel
-from sqlalchemy import Column, String, Text, Integer, Float
 
 
 class FoodModel(BaseModel):
